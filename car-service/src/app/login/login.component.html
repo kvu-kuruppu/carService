@@ -1,0 +1,84 @@
+<header>
+  <div class="main wrap">
+    <h1><a href="index.html"><img src="assets/logo.png" alt=""></a></h1>
+    <p><span><img src="https://img.icons8.com/color/48/000000/phone-disconnected--v1.png" /> 011 2 888 788</span></p>
+  </div>
+  <nav>
+    <ul class="menu">
+      <li><a href="#" routerLink="/home" routerLinkActive="active">Home</a></li>
+      <li><a href="#" routerLink="/about" routerLinkActive="active">About</a></li>
+      <li><a href="#" routerLink="/services" routerLinkActive="active">Services</a></li>
+      <li><a href="#" routerLink="/pricelist" routerLinkActive="active">Price List</a></li>
+      <li class="current"><a href="#" routerLink="/login" routerLinkActive="active">Login</a></li>
+    </ul>
+    <div class="clear"></div>
+  </nav>
+</header>
+
+<section class="header-shadow">
+
+  <nav>
+    <ul class="menu">
+      <li class="current"></li>
+      <li> </li>
+      <li> </li>
+      <li> </li>
+      <li> </li>
+      <li> </li>
+    </ul>
+    <div class="clear"></div>
+  </nav>
+</section>
+<section id="content">
+  <div class="card box-9">
+    <h2>Create an Account</h2>
+    <form [formGroup]="registerForm">
+      <div class="form-group">
+        <label for="exampleInputEmail1"> </label>
+        <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+        <small id="emailHelp" class="form-text text-muted"></small>
+      </div>
+      <div class="form-group">
+          <label for="exampleInputUsername"> </label>
+          <input formControlName="name" type="text" class="form-control" id="exampleInputUsername" aria-describedby="userHelp" placeholder="Customer Name">
+          <small id="userHelp" class="form-text text-muted"></small>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputUsername"> </label>
+        <input formControlName="phone" type="text" class="form-control" id="exampleInputUsername" aria-describedby="userHelp" placeholder="Phone Number">
+        <small id="userHelp" class="form-text text-muted"></small>
+    </div>
+      <div class="form-group">
+        <label for="passwordInput"> </label>
+        <input formControlName="password" type="password" class="form-control" id="passwordInput" aria-describedby="passHelp" placeholder="Password">
+        <small id="passHelp" class="form-text text-muted"></small>
+      </div>
+      <div class="form-group">
+          <label for="CpasswordInput"> </label>
+          <input formControlName="cpass" type="password" class="form-control" id="CpasswordInput" aria-describedby="CpassHelp" placeholder="Confirm Password">
+          <small id="CpassHelp" class="form-text text-muted"></small>
+        </div>
+      <div class="form-group" style="text-align:center;">
+          <button type="button" class="btns button" (click)="register()">Register</button>
+      </div>
+    </form>
+  </div>
+  <div class="showcase-form card">
+    <h2>Login</h2>
+    <form [formGroup]="loginForm">
+      <!--name="contact" method="POST" netlify-honeypot="bot-feild" data-netlify="true"-->
+      <div class="form-control">
+        <input formContolName="email" type="email" name="email" placeholder="Email" required>
+      </div>
+      
+      <div class="form-control">
+        <input formContolName="password" type="password" name="" placeholder="Password" required>
+      </div>
+      <div>
+        <button class="btns button" (click)='login()'>Login</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<app-footer-service></app-footer-service>

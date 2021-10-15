@@ -1,0 +1,6 @@
+
+table {background:rgb(0, 0, 0); color: white; text-transform:uppercase; margin-bottom: 10px;}
+table td, table th {border:#e2e2e4 1px solid; border-collapse:collapse; }
+table th {width:122px; font-weight:bold; text-align:left; padding:15px 10px 8px 20px;}
+table td { padding:9px 10px 8px 20px;}
+table td:first-child {font-weight:bold;}

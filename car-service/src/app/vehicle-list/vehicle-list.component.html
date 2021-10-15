@@ -1,0 +1,97 @@
+<header>
+    <div class="main wrap">
+        <h1><a href="index.html"><img src="assets/logo.png" alt=""></a></h1>
+        <p><span><img src="https://img.icons8.com/color/48/000000/phone-disconnected--v1.png" /> 011 2 888 788</span>
+        </p>
+    </div>
+    <nav>
+        <ul class="menu">
+            <li ><a href="#" routerLink="/user" routerLinkActive="active">Home</a></li>
+            <li><a href="#" routerLink="/vabout" routerLinkActive="active">About</a></li>
+            <li><a href="#" routerLink="/vservices" routerLinkActive="active">Services</a></li>
+            <li><a href="#" routerLink="/vpricelist" routerLinkActive="active">Price List</a></li>
+            <li class="current"><a href="#" routerLink="/vehicle" routerLinkActive="active">Vehicle List</a></li>
+            <li ><a href="#" routerLink="/booking" routerLinkActive="active">Booking</a></li>
+            <li><button type="button" class="btns button">Log Out</button></li>
+
+        </ul>
+        <div class="clear"></div>
+    </nav>
+</header>
+
+<section class="header-shadow">
+
+    <nav>
+        <ul class="menu">
+            <li class="current"></li>
+            <li> </li>
+            <li> </li>
+            <li> </li>
+            <li> </li>
+            <li> </li>
+        </ul>
+        <div class="clear"></div>
+    </nav>
+</section>
+<section id="content">
+    <div class="card box-9 tab" >
+        <h2>Add My Vehicle Details</h2>
+        <form class=" tab">
+            <div class="form-group form-control">
+            <label>Vehicle Type</label><br>
+                <select class="form-control">
+                    <option value="1">Bike</option>
+                    <option value="1">Car</option>
+                    <option value="1">Geep</option>
+                    <option value="1">Bus</option>
+                    <option value="1">Lorry</option>
+                    <option value="1">Van</option>
+                    <option value="1">Other</option>
+                </select> 
+            </div>
+            <div class="form-group form-control">
+                <label>Vehicle Number</label><br>
+                <input type="text" class="form-control" >
+            </div>
+            <div class="form-group form-control">
+                <label>NIC number</label><br>
+                    <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Brand</label><br>
+                <select class="form-control">
+                    <option value="1">Full Service</option>
+                    <option value="1">Half Service</option>
+                    <option value="1">Full Service</option>
+                    <option value="1">Half Service</option>
+                    <option value="1">Full Service</option>
+                    <option value="1">Half Service</option>
+                </select> 
+            </div>
+            <div class="form-group">
+                <label>Color</label><br>
+                <select class="form-control">
+                    <option value="1">Black</option>
+                    <option value="1">Blue</option>
+                    <option value="1">White</option>
+                    <option value="1">Red</option>
+                    <option value="1">Ashe</option>
+                    <option value="1">Other</option>
+                </select> 
+            </div>
+            <div class="form-group">
+                <label>Tyre</label><br>
+                <select class="form-control">
+                    <option value="1">Tyre1</option>
+                    <option value="1">Tyre2</option>
+                </select> 
+            </div>
+            
+            <div class="form-group" style="text-align:center;">
+                <button type="button" class="btns button">Add</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<app-footer-service></app-footer-service>

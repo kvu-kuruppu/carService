@@ -1,0 +1,10 @@
+
+.map {width:190px; height:250px; margin-top:13px; }
+.map iframe {width:190px; height:200px;}
+dl.adr { margin-top:13px; text-transform:uppercase;}
+dl.adr dd span { width:70px; display:block; float:left;}
+dl.adr dd {white-space:nowrap;}
+#form { margin: 30px; width:610px; }
+#form input {border:rgb(67, 66, 71) 1px solid; border-width: 2px; border-radius: 25px; background:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)); font-size:11px; font-family:Arial, Helvetica, sans-serif; color:rgb(141, 141, 148); padding:7px 10px 7px 18px;outline: medium none;width: 500px; height:20px; float:left;}
+#form textarea {border:rgb(67, 66, 71) 1px solid; border-width: 2px; border-radius: 25px; background:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)); font-size:11px; font-family:Arial, Helvetica, sans-serif; color:rgb(141, 141, 148); height:100px;outline: medium none;overflow: auto; padding: 7px 0px 0px 18px;width:500px;resize:none;margin:0px 0 0 0;float:left;}
+#form label {position:relative;display:block; min-height:30px; overflow:hidden;padding: 10px;}

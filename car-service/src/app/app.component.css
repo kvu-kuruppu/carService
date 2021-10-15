@@ -1,0 +1,41 @@
+.helo-bg{
+    color:#ccc;
+	position: fixed;
+    width:1500px;
+    height: 400px;
+    overflow:inherit;
+    text-align: center;
+    
+}
+
+    
+
+.helo-bg h2{
+    font-family: 'Kaushan Script', cursive;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 0.3rem;
+    text-align: center;
+    padding: 30px;
+	font-size: 7rem;
+    color: rgb(198, 190, 229);
+    
+}
+.helo-bg h2 span{
+    text-align: center;
+    display: block;
+    font-size: 5rem;
+    color:transparent;
+    margin-bottom: 30px;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1s;
+    padding: 10px;
+
+   
+}
+@keyframes text_reveal{
+    100%{
+        color:rgb(3, 9, 58);
+        text-shadow: silver 0 0 10px;
+    }
+}

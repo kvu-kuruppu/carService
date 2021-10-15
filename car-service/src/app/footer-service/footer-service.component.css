@@ -1,0 +1,41 @@
+footer{
+    background-image: linear-gradient(60deg, #09093a 0%, #00030a 100%);
+  
+
+}
+ .footer{
+    min-height: 80px;
+    flex-direction: column;
+    padding-top: 5px;
+    padding-bottom: 10px;
+	justify-content: center;
+	align-content: center;
+    
+    
+}
+
+.social-icon{
+    display: flex;
+    margin-bottom: 2px;
+	align-items: center;
+	justify-content: center;
+}
+.social-item{
+    height: 50px;
+    width: 50px;
+    margin: 10px 5px;
+	
+}
+.social-item img{
+    filter: grayscale(1);
+    transition: .3s ease filter;
+}
+.social-item:hover img{
+    filter: grayscale(0);
+}
+.footer p{
+    color: rgb(187, 183, 201);
+    font-size: 0.8rem;
+	text-align: center;
+}
+

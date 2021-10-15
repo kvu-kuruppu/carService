@@ -1,0 +1,103 @@
+header{
+    position:fixed; 
+    z-index: 1000; 
+    width: 100vw; 
+    height: auto; 
+    background:linear-gradient(60deg, #04040c 0%, #041642 100%);
+    color: white;
+    margin: 0;
+}
+h1 {
+    display:inline-block; 
+    z-index:111; 
+    float: left; 
+    padding:27px 0 0 21px;
+}
+h2 {
+    font-family: 'Kaushan Script', cursive;
+    display:inline-block;
+   letter-spacing: 1px;
+   line-height: 55px;
+    z-index:111; 
+    font-size: 3rem;
+   
+}
+h2>span {
+    font-family: 'Kaushan Script', cursive;
+    display:inline-block;
+   letter-spacing: 1px;
+   line-height: 55px;
+    z-index:111; 
+    font-size: 1rem;
+    font-style: italic;
+    padding:20px;
+}
+header p {
+    float:right; 
+    width:230px; 
+    overflow: hidden;
+    font:16px/20px Tahoma, Geneva, sans-serif; 
+    color:#c6c6ce; 
+    padding:27px 0 27px 0; 
+}
+header p>span {
+    display:block; 
+    color:#ccc; 
+    font-size:25px; 
+    line-height:30px; 
+    margin-top:6px;
+    letter-spacing:-1px;
+}
+nav {
+    display:block; 
+    z-index:1111; 
+    position:relative; 
+}
+
+ul.menu {
+    display:block; 
+    width:960px; 
+    margin:0 auto;
+}
+ul.menu li {
+    float:left; 
+    display:block; 
+    height:60px; 
+    text-align:center; 
+}
+ul.menu li:first-child {
+    background:transparent;
+}
+ul.menu li a.home {
+    width:61px; 
+    height:60px; 
+    display:block; 
+    padding:0 !important;
+}
+ul.menu li a { 
+    font:16px/20px Tahoma, Geneva, sans-serif; 
+    color:#ccc; display:block; 
+    padding:19px 22px 21px 22px; 
+    overflow:hidden; 
+    font-weight: bold; 
+}
+
+ul.menu li:hover a.home, ul.menu li.current a.home {
+    background-position:right 0;
+}
+ul.menu li:hover a.home img, ul.menu li.current a.home img {
+    display:none;
+}
+ul.menu li a:hover , ul.menu li.current a {
+    color:#0fc6ee; 
+    text-shadow:#68dcf6 0 0 5px;
+}
+.header-shadow{
+    margin-bottom: 100px; 
+    z-index: 1000; 
+    width: 100vw; 
+    height: auto; 
+    background:transparent;
+}
+.sub-page {background:transparent; overflow:hidden;}
+.sub-page-left {border-bottom:none; float:left; width:900px; padding:29px 39px 0px 39px;}
