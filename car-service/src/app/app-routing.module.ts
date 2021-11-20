@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { PricelistSectionComponent} from './pricelist-section/pricelist-section.component';
 import { ServicesSectionComponent} from './services-section/services-section.component';
+import { TyreSearchComponent } from './tyre-search/tyre-search.component';
 import { UserhomeComponent } from './userhome/userhome.component';
 import { VaboutComponent } from './vabout/vabout.component';
 import { VehicleListComponent } from './vehicle-list/vehicle-list.component';
@@ -25,7 +26,8 @@ const routes: Routes = [
   {path:'booking',component:BookingComponent},
   {path:'vabout', component:VaboutComponent},
   {path:'vpricelist', component:VpricelistComponent},
-  {path:'vservices', component:VservicesComponent}
+  {path:'vservices', component:VservicesComponent},
+  {path:'tyres', component:TyreSearchComponent}
 ];
 
 @NgModule({

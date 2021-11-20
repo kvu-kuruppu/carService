@@ -19,6 +19,7 @@ import { BookingComponent } from './booking/booking.component';
 import { VaboutComponent } from './vabout/vabout.component';
 import { VservicesComponent } from './vservices/vservices.component';
 import { VpricelistComponent } from './vpricelist/vpricelist.component';
+import { TyreSearchComponent } from './tyre-search/tyre-search.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { VpricelistComponent } from './vpricelist/vpricelist.component';
     VaboutComponent,
     VservicesComponent,
     VpricelistComponent,
+    TyreSearchComponent,
   ],
   imports: [
     BrowserModule,

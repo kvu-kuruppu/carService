@@ -1,0 +1,97 @@
+<header>
+    <div class="main wrap">
+        <h1><a href="index.html"><img src="assets/logo.png" alt=""></a></h1>
+        <p><span><img src="https://img.icons8.com/color/48/000000/phone-disconnected--v1.png" /> 011 2 888 788</span>
+        </p>
+    </div>
+    <nav>
+        <ul class="menu">
+            <li><a href="#" routerLink="/home" routerLinkActive="active">Home</a></li>
+            <li><a href="#" routerLink="/about" routerLinkActive="active">About</a></li>
+            <li><a href="#" routerLink="/services" routerLinkActive="active">Services</a></li>
+            <li class="current"><a href="#" routerLink="/pricelist" routerLinkActive="active">Price List</a></li>
+            <li><a href="#" routerLink="/login" routerLinkActive="active">Login</a></li>
+        </ul>
+        <div class="clear"></div>
+    </nav>
+</header>
+
+<section class="header-shadow">
+
+    <nav>
+        <ul class="menu">
+            <li class="current"></li>
+            <li> </li>
+            <li> </li>
+            <li> </li>
+            <li> </li>
+            <li> </li>
+        </ul>
+        <div class="clear"></div>
+    </nav>
+</section>
+<section id="content">
+    <div class="sub-page">
+        <div class="sub-page-left">
+            <div class="box-4">
+                <img src="/assets/tyre-descrip.jpg">
+                <hr>
+                <br>
+                <br>
+                <form id="form" (ngSubmit)="getData()" [formGroup]="form">
+                    <fieldset>
+                        <div class="form-group">
+                            <label for="width">Tyre width</label>
+                            <input type="text" formControlName="width" class="form-control" placeholder="Enter tyre width">
+
+                            <!-- <div *ngIf="submitted && f.width.errors" class="invalid-feedback">
+                                <div *ngIf="f.width.errors.required">Width is required</div>
+                            </div> -->
+                        </div>
+
+                        <div class="form-group">
+                            <label for="width">Tyre rim</label>
+                            <input type="text" formControlName="rim" class="form-control" placeholder="Example - R16">
+
+                            <!-- <div *ngIf="submitted && f.rim.errors" class="invalid-feedback">
+                                <div *ngIf="f.rim.errors.required">Rim is required</div>
+                            </div> -->
+                        </div>
+
+                        <div class="form-group">
+                            <button class="btns button">Submit</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="sub-page-left box-9" *ngIf="display">
+            <h2 class="p4">Tyre options in stock</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>name</th>
+                            <th>Width</th>
+                            <th>Profile</th>
+                            <th>Rim</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor= 'let tyre of tyre'>
+                            <th>{{ tyre.name }}</th>
+                            <th>{{ tyre.width }}</th>
+                            <th>{{ tyre.aspectRatio }}</th>
+                            <th>{{ tyre.rim }}</th>
+                            <th>{{ tyre.price }}</th>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+    </div>
+</section>
+
+<app-footer-service></app-footer-service>
