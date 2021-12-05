@@ -12,7 +12,8 @@ export class TyreSearchComponent implements OnInit {
   form!: FormGroup;
   tyre: any;
   data: any;
-  display:boolean=false;
+  displayTable:boolean=false;
+  displayError:boolean=false;
 
   constructor(private shopService: ShopServiceService, private formBuilder: FormBuilder) { }
 
@@ -32,9 +33,16 @@ export class TyreSearchComponent implements OnInit {
   }
 
   getData() {
+    this.displayTable = false
+    this.displayError = false
     this.shopService.getTyres(this.form.value.width, this.form.value.rim).subscribe(res => {
-      this.tyre = res;
-      this.display = true;
+      if(Object.keys(res).length == 0) {
+        this.displayError = true;
+      }
+      else {
+        this.tyre = res;
+        this.displayTable = true;
+      }
     });
   }
 
