@@ -1,6 +1,29 @@
 
-table {background:rgb(0, 0, 0); color: white; text-transform:uppercase; margin-bottom: 10px;}
-table td, table th {border:#e2e2e4 1px solid; border-collapse:collapse; }
-table th {width:122px; font-weight:bold; text-align:left; padding:15px 10px 8px 20px;}
-table td { padding:9px 10px 8px 20px;}
-table td:first-child {font-weight:bold;}
+p{
+    font-size: 1rem;
+   text-transform: none;
+}
+a{
+    font-size: 2rem;
+    padding: 10px;
+}
+.p4{
+    text-transform: none;
+}
+.sub-page-left {
+    border-bottom:none; 
+    align-items:center;
+    margin-left: 100px; 
+    width:610px; 
+    padding:29px 39px 0px 39px;
+}
+.box-4 .block-info{
+    width: 310px; 
+    height: 115px; 
+    background: linear-gradient(rgba(22, 19, 43, 0.75),rgba(6, 6, 10, 0.568)) 0 0 repeat;
+    margin: 10px; 
+    margin-right: 0px;
+    border-radius: 50px 0;
+}
+
+

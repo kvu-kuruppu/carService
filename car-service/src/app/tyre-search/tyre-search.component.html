@@ -10,7 +10,6 @@
             <li><a href="#" routerLink="/about" routerLinkActive="active">About</a></li>
             <li><a href="#" routerLink="/services" routerLinkActive="active">Services</a></li>
             <li class="current"><a href="#" routerLink="/pricelist" routerLinkActive="active">Price List</a></li>
-            <li><a href="#" routerLink="/login" routerLinkActive="active">Login</a></li>
         </ul>
         <div class="clear"></div>
     </nav>
@@ -32,18 +31,16 @@
 </section>
 <section id="content">
     <div class="sub-page">
-        <div class="sub-page-left">
-            <div class="box-4">
-                <img src="/assets/tyre-descrip.jpg" style="margin-left: auto; margin-right: auto; display: block;">
-                <br><br>
+        <br>
+        <img src="/assets/tyre-descrip.jpg" style="margin-left: auto; margin-right: auto; display: block;">
+                <br>
                 <hr>
-                <br>
-                <br>
-                <div class="card box-9">
+        <div>
+                <div class="card box-9 tab">
                     <h2>Search for Tyres by dimensions</h2>
-                    <form id="form" (ngSubmit)="getData()" [formGroup]="form">
+                    <form class="tab" (ngSubmit)="getData()" [formGroup]="form">
                         <fieldset>
-                            <div class="form-group">
+                            <div class="form-group form-control">
                                 <label for="width">Tyre width</label>
                                 <input type="text" formControlName="width" class="form-control" placeholder="Enter tyre width">
 
@@ -51,7 +48,7 @@
                                     <div *ngIf="f.width.errors.required">Width is required</div>
                                 </div> -->
                             </div>
-
+                            
                             <div class="form-group">
                                 <label for="width">Tyre rim</label>
                                 <input type="text" formControlName="rim" class="form-control" placeholder="Example - R16">
@@ -67,12 +64,11 @@
                         </fieldset>
                     </form>
                 </div>
-            </div>
         </div>
 
         <br><br>
 
-        <div class="sub-page-left box-9" *ngIf="displayTable">
+        <div class="sub-right box-9" *ngIf="displayTable">
             <h2 class="p4">Tyre options in stock</h2>
                 <table>
                     <thead>
@@ -81,7 +77,7 @@
                             <th>Width</th>
                             <th>Profile</th>
                             <th>Rim</th>
-                            <th>Price</th>
+                            <th>Price <br> Rs. </th>
                         </tr>
                     </thead>
                     <tbody>
@@ -96,8 +92,9 @@
                 </table>
         </div>
 
-        <div class="sub-page-left box-9" *ngIf="displayError">
-            <h2 class="p4">No Tyres in Stock</h2>
+        <div class="sub-right  box-9" *ngIf="displayError">
+            <h2><span>No Tyres in Stock</span> </h2>
+            <img src="/assets/soldout.png" alt="">
         </div>
     </div>
 </section>

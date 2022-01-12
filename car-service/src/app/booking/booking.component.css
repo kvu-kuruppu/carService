@@ -57,7 +57,7 @@ select {
     }
     textarea {
         margin: 20px;
-    margin-top: 0px;
+        margin-top: 0px;
         margin-bottom: 20px;
         color: black;
         font-size: 0.7rem;
