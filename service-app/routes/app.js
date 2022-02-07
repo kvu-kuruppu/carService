@@ -14,6 +14,7 @@ router.get('/api/tyres', (req, res) => {
     });
 });
 
+//GET BY WIDTH  AND RIM SIZE
 router.get('/api/tyre/find/:width/:rim', (req, res) => {
     var wid = {
         width: req.params.width,

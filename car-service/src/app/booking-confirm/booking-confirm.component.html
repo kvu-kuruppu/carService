@@ -1,0 +1,104 @@
+<header>
+    <div class="main wrap">
+        <h1><a href="index.html"><img src="assets/logo.png" alt=""></a></h1>
+        <p><span><img src="https://img.icons8.com/color/48/000000/phone-disconnected--v1.png" /> 011 2 888 788</span>
+        </p>
+    </div>
+    <nav>
+        <ul class="menu">
+            <li ><a href="#" routerLink="/home" routerLinkActive="active">Home</a></li>
+            <li><a href="#" routerLink="/about" routerLinkActive="active">About</a></li>
+            <li><a href="#" routerLink="/services" routerLinkActive="active">Services</a></li>
+            <li><a href="#" routerLink="/pricelist" routerLinkActive="active">Price List</a></li>
+        </ul>
+        <div class="clear"></div>
+    </nav>
+</header>
+
+<section class="header-shadow">
+
+    <nav>
+        <ul class="menu">
+            <li class="current"></li>
+            <li> </li>
+            <li> </li>
+            <li> </li>
+            <li> </li>
+            <li> </li>
+        </ul>
+        <div class="clear"></div>
+    </nav>
+</section>
+<section id="content">
+
+    <div class="card box-9 tab" >
+        <h2>Booking Successful</h2>
+        
+        <table>
+            <tr>
+                <td>Name</td>
+                <td>-</td>
+                <td>{{ bookConfirm.name }}</td>
+            </tr>
+            <tr>
+                <td>Mobile Number</td>
+                <td>-</td>
+                <td>{{ bookConfirm.mobile }}</td>
+            </tr>
+            <tr>
+                <td>Email Address</td>
+                <td>-</td>
+                <td>{{ bookConfirm.email }}</td>
+            </tr>
+            <tr>
+                <td>Vehicle Number</td>
+                <td>-</td>
+                <td>{{ bookConfirm.vehicleNo }}</td>
+            </tr>
+            <tr>
+                <td>Vehicle Model</td>
+                <td>-</td>
+                <td>{{ bookConfirm.vehicleModel }}</td>
+            </tr>
+            <tr>
+                <td>Service Type</td>
+                <td>-</td>
+                <div *ngIf="bookConfirm.servType==1">
+                    <td>Body Wash</td>
+                </div>
+                <div *ngIf="bookConfirm.servType==2">
+                    <td>Half Service</td>
+                </div>
+                <div *ngIf="bookConfirm.servType==3">
+                    <td>Full Service</td>
+                </div>
+            </tr>
+            <tr>
+                <td>Date</td>
+                <td>-</td>
+                <td>{{ bookConfirm.dateServ }}</td>
+            </tr>
+            <tr>
+                <td>Time</td>
+                <td>-</td>
+                <div *ngIf="bookConfirm.timeSlot==1">
+                    <td>9.00 am</td>
+                </div>
+                <div *ngIf="bookConfirm.timeSlot==2">
+                    <td>1.00 pm</td>
+                </div>
+                <div *ngIf="bookConfirm.timeSlot==3">
+                    <td>3.00 pm</td>
+                </div>
+            </tr>
+            <tr>
+                <td>Special Comments</td>
+                <td>-</td>
+                <td>{{ bookConfirm.comments }}</td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+<app-footer-service></app-footer-service>
+
