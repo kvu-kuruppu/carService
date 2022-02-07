@@ -20,6 +20,7 @@ import { VaboutComponent } from './vabout/vabout.component';
 import { VservicesComponent } from './vservices/vservices.component';
 import { VpricelistComponent } from './vpricelist/vpricelist.component';
 import { TyreSearchComponent } from './tyre-search/tyre-search.component';
+import { BookingConfirmComponent } from './booking-confirm/booking-confirm.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { TyreSearchComponent } from './tyre-search/tyre-search.component';
     VservicesComponent,
     VpricelistComponent,
     TyreSearchComponent,
+    BookingConfirmComponent,
   ],
   imports: [
     BrowserModule,

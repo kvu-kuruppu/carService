@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutSectionComponent } from './about-section/about-section.component';
+import { BookingConfirmComponent } from './booking-confirm/booking-confirm.component';
 import { BookingComponent } from './booking/booking.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
@@ -25,9 +26,10 @@ const routes: Routes = [
   {path:'vehicle',component:VehicleListComponent},
   {path:'booking',component:BookingComponent},
   {path:'vabout', component:VaboutComponent},
-  {path:'vpricelist', component:VpricelistComponent},
+  {path:'vpricelist', component:PricelistSectionComponent},
   {path:'vservices', component:VservicesComponent},
-  {path:'tyres', component:TyreSearchComponent}
+  {path:'tyres', component:TyreSearchComponent},
+  {path:'confirm', component:BookingConfirmComponent}
 ];
 
 @NgModule({
