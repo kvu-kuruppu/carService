@@ -1,0 +1,22 @@
+<div class="row" style="max-width: fit-content">
+  <div class="col-xs-12">
+    <ul class="list-group">
+      <li
+        class="list-group-item"
+        *ngFor="let lubs of lubricant.lubDetail">
+        <div class="row">
+          <div class="col-xs-12">
+            <img
+              [src]="lubs.desImg"
+              alt="{{ lubs.des }}"
+              class="img-responsive"
+              style="max-height: 200px;">
+          </div>
+        </div>
+        <h4>{{ lubricant.name }} {{ lubs.des }}</h4>
+        <br>
+        Rs. {{ lubs.amount }}.00
+      </li>
+    </ul>
+  </div>
+</div>

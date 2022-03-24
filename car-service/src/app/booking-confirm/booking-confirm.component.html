@@ -31,7 +31,7 @@
 </section>
 <section id="content">
 
-    <div class="card box-9 tab" >
+    <div class="card box-9 tab" id="pdfFields">
         <h2>Booking Successful</h2>
         
         <table>
@@ -97,6 +97,9 @@
                 <td>{{ bookConfirm.comments }}</td>
             </tr>
         </table>
+    </div>
+    <div>
+        <button type="button" class="btns button" (click)="pdfGenerate()">Download Receipt</button>
     </div>
 </section>
 

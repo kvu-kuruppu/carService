@@ -21,6 +21,12 @@ import { VservicesComponent } from './vservices/vservices.component';
 import { VpricelistComponent } from './vpricelist/vpricelist.component';
 import { TyreSearchComponent } from './tyre-search/tyre-search.component';
 import { BookingConfirmComponent } from './booking-confirm/booking-confirm.component';
+import {LubricantsComponent} from './lubricants/lubricants.component';
+import {LubricantListComponent} from './lubricants/lubricant-list/lubricant-list.component';
+import {LubricantItemsComponent} from './lubricants/lubricant-list/lubricant-items/lubricant-items.component';
+import {LubricantDetailsComponent} from './lubricants/lubricant-details/lubricant-details.component';
+import {LubricantService} from "./lubricants/lubricant.service";
+
 
 @NgModule({
   declarations: [
@@ -40,6 +46,10 @@ import { BookingConfirmComponent } from './booking-confirm/booking-confirm.compo
     VpricelistComponent,
     TyreSearchComponent,
     BookingConfirmComponent,
+    LubricantsComponent,
+    LubricantListComponent,
+    LubricantItemsComponent,
+    LubricantDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +59,7 @@ import { BookingConfirmComponent } from './booking-confirm/booking-confirm.compo
     HttpClientModule
    
   ],
-  providers: [UserService],
+  providers: [UserService, LubricantService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
