@@ -1,0 +1,9 @@
+<div class="row">
+  <div class="col-xs-12">
+    <app-lubricant-items
+      *ngFor="let lub of lubricants; let i = index"
+      [lubricant]="lub"
+      [index]="i">
+    </app-lubricant-items>
+  </div>
+</div>

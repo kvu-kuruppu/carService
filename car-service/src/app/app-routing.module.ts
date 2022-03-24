@@ -13,6 +13,9 @@ import { VaboutComponent } from './vabout/vabout.component';
 import { VehicleListComponent } from './vehicle-list/vehicle-list.component';
 import { VpricelistComponent } from './vpricelist/vpricelist.component';
 import { VservicesComponent } from './vservices/vservices.component';
+import {LubricantsComponent} from "./lubricants/lubricants.component";
+import {LubricantDetailsComponent} from "./lubricants/lubricant-details/lubricant-details.component";
+
 
 const routes: Routes = [
  //{path:'', redirectTo:'user', pathMatch:'full'},
@@ -29,7 +32,17 @@ const routes: Routes = [
   {path:'vpricelist', component:PricelistSectionComponent},
   {path:'vservices', component:VservicesComponent},
   {path:'tyres', component:TyreSearchComponent},
-  {path:'confirm', component:BookingConfirmComponent}
+  {path:'confirm', component:BookingConfirmComponent},
+  {
+    path: 'lubricants',
+    component: LubricantsComponent,
+    children: [
+      {
+        path: ':id',
+        component: LubricantDetailsComponent
+      }
+    ]
+  }
 ];
 
 @NgModule({

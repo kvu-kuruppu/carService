@@ -15,6 +15,7 @@ export class BookingComponent implements OnInit {
   displayError:boolean=false;
   data:any;
   bookConfirm!:BookingModel;
+  dateErr:boolean=false;
   
   constructor(private bookingService: BookingServiceService, private formBuilder: FormBuilder, 
     private router: Router, private bookingSharedService: BookingSharedServiceService) { }
@@ -53,6 +54,7 @@ export class BookingComponent implements OnInit {
     this.bookingService.getBookingByDate(this.form.value.dateServ, this.form.value.timeSlot).subscribe(res => {
       if(Object.keys(res).length != 0) {
         this.displayError=true;
+        this.dateErr=true;
         //this.clearTimeSlot();
       }
       else {
