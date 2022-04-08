@@ -8,8 +8,8 @@ import {Lubricant} from "../../lubricant.model";
   styleUrls: ['./lubricant-items.component.css']
 })
 export class LubricantItemsComponent implements OnInit {
-  @Input() lubricant: Lubricant;
-  @Input() index: number;
+  @Input() lubricant!: Lubricant;
+  @Input() index!: number;
 
   constructor() { }
 

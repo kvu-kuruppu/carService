@@ -52,15 +52,16 @@ export class BookingComponent implements OnInit {
     }
 
     this.bookingService.getBookingByDate(this.form.value.dateServ, this.form.value.timeSlot).subscribe(res => {
-      if(Object.keys(res).length != 0) {
+      if(Object.keys(res).length >= 3) {
         this.displayError=true;
         this.dateErr=true;
         //this.clearTimeSlot();
       }
       else {
         this.addBooking();
-        this.bookConfirm = new BookingModel(this.form.value.name, this.form.value.mobile, this.form.value.email, this.form.value.vehicleNo,
-          this.form.value.vehicleModel, this.form.value.servType, this.form.value.dateServ, this.form.value.timeSlot, this.form.value.comments);
+        this.bookConfirm = new BookingModel(this.form.value.name, this.form.value.mobile, this.form.value.email, 
+          this.form.value.vehicleNo, this.form.value.vehicleModel, this.form.value.servType, this.form.value.dateServ, 
+          this.form.value.timeSlot, this.form.value.comments);
 
         this.bookingSharedService.changeMessage(this.bookConfirm)
         this.router.navigateByUrl('/confirm');
