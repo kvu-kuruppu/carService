@@ -12,6 +12,7 @@ router.post('/login', function(req,res,next){
   addToDB(req,res);
 });
 
+
 async function addToDB(req,res){
 
   var user = new User({

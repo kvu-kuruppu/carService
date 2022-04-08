@@ -32,7 +32,7 @@
 <section id="content">
 
     <div class="card box-9 tab" id="pdfFields">
-        <h2>Booking Successful</h2>
+        <h2>Booking Successful</h2><br>
         
         <table>
             <tr>
@@ -97,10 +97,11 @@
                 <td>{{ bookConfirm.comments }}</td>
             </tr>
         </table>
+        <div>
+            <button type="button" class="btns button" (click)="pdfGenerate()">Download Receipt</button>
+        </div>
     </div>
-    <div>
-        <button type="button" class="btns button" (click)="pdfGenerate()">Download Receipt</button>
-    </div>
+    
 </section>
 
 <app-footer-service></app-footer-service>

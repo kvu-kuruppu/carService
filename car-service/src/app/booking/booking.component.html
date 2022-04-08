@@ -30,11 +30,6 @@
     </nav>
 </section>
 <section id="content">
-    <div class="sub-right  box-9" *ngIf="displayError">
-        <h2><span>Timeslot unavailable, Please select another time</span> </h2>
-        <img src="/assets/soldout.png" alt="">
-    </div>
-
     <div class="card box-9 tab" >
         <h2>Booking Now</h2>
         <form class=" tab" (ngSubmit)="makeBooking()" [formGroup]="form">
@@ -89,6 +84,9 @@
               </div>
             <div class="form-group" style="text-align:center;">
                 <button type="submit" class="btns button">Submit Booking</button>
+            </div>
+            <div class="sub-right  box-9" *ngIf="displayError">
+                <h2><span class="error"> ** Timeslot unavailable, Please select another time **</span> </h2>
             </div>
         </form>
     </div>

@@ -31,13 +31,22 @@
 </section>
 
 <section id="content">
-  <div class="row">
-    <div class="col-md-5">
-      <app-lubricant-list></app-lubricant-list>
-    </div>
-    <div class="col-md-7">
-      <router-outlet></router-outlet>
-    </div>
-  </div>
+  <table>
+    <tr>
+      <td>
+        <div class="card box-9 tab">
+          <div class="block-item">
+            <app-lubricant-list></app-lubricant-list>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="card box-8 tab">
+          <router-outlet></router-outlet>
+        </div>
+      </td>
+    </tr>
+
+  </table>
 </section>
 <app-footer-service></app-footer-service>

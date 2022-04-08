@@ -128,6 +128,10 @@ export class BookingConfirmComponent implements OnInit {
                 fontSize: 13,
               },
               {
+                text: ' ',
+                fontSize: 13,
+              },
+              {
                 text: 'Vehicle Number',
                 fontSize: 13,
               },
@@ -140,6 +144,10 @@ export class BookingConfirmComponent implements OnInit {
                 fontSize: 13,
               },
               {
+                text: ' ',
+                fontSize: 13,
+              },
+              {
                 text: 'Booking Date',
                 fontSize: 13,
               },
@@ -148,7 +156,69 @@ export class BookingConfirmComponent implements OnInit {
                 fontSize: 13,
               },
               {
+                text: ' ',
+                fontSize: 13,
+              },
+              {
                 text: 'Special Comments',
+                fontSize: 13,
+              },
+            ],
+            [
+              {
+                text: ' ',
+                fontSize: 13,
+              },
+              {
+                text: ' ',
+                fontSize: 13,
+              },
+              {
+                text: '-',
+                fontSize: 13,
+              },
+              {
+                text: '-',
+                fontSize: 13,
+              },
+              {
+                text: '-',
+                fontSize: 13,
+              },
+              {
+                text: ' ',
+                fontSize: 13,
+              },
+              {
+                text: '-',
+                fontSize: 13,
+              },
+              {
+                text: '-',
+                fontSize: 13,
+              },
+              {
+                text: '-',
+                fontSize: 13,
+              },
+              {
+                text: ' ',
+                fontSize: 13,
+              },
+              {
+                text: '-',
+                fontSize: 13,
+              },
+              {
+                text: '-',
+                fontSize: 13,
+              },
+              {
+                text: ' ',
+                fontSize: 13,
+              },
+              {
+                text: '-',
                 fontSize: 13,
               },
             ],
@@ -174,6 +244,10 @@ export class BookingConfirmComponent implements OnInit {
                 fontSize: 13,
               },
               {
+                text: ' ',
+                fontSize: 13,
+              },
+              {
                 text: this.bookConfirm.vehicleNo,
                 fontSize: 13,
               },
@@ -186,11 +260,19 @@ export class BookingConfirmComponent implements OnInit {
                 fontSize: 13,
               },
               {
+                text: ' ',
+                fontSize: 13,
+              },
+              {
                 text: this.bookConfirm.dateServ,
                 fontSize: 13,
               },
               {
                 text: this.time,
+                fontSize: 13,
+              },
+              {
+                text: ' ',
                 fontSize: 13,
               },
               {

@@ -1,0 +1,27 @@
+.block-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;  
+    overflow: hidden;
+	height: 100%;
+	margin: 0;
+	width: 350px;
+	border-radius: 0;
+
+}
+
+.card{
+    background:linear-gradient(rgba(1, 1, 31, 0.75),rgba(35, 13, 88, 0.75));
+    color: rgb(141, 134, 134);
+    font-size:1rem;
+    margin: 10px 100px;
+    border-radius: 10px;
+    float:inline-end; width:300px; padding:30px 40px 40px 40px;
+    
+  }
+  .box-8{
+      width: 300px;
+      margin: 0px;
+      background: transparent;
+  }
